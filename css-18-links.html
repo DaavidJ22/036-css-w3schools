@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Links</title>
+
+    <style>
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .boton {
+            background-color: darkgreen;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .boton:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Enlaces con CSS</h1>
+
+    <p>
+        <a href="https://www.w3schools.com/css/">
+            Visitar el tutorial de CSS
+        </a>
+    </p>
+
+    <p>
+        <a href="https://www.w3schools.com" class="boton">
+            Enlace con apariencia de botón
+        </a>
+    </p>
+
+</body>
+</html>
