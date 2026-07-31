@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            background-color: green;
+            color: white;
+        }
+
+        .imagen-fondo {
+            background-image: url("https://www.w3schools.com/css/img_tree.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+            height: 300px;
+            padding: 20px;
+        }
+
+        .transparente {
+            background-color: rgba(0, 128, 0, 0.3);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Fondos en CSS</h1>
+
+    <div class="imagen-fondo">
+        <p>
+            Este elemento utiliza una imagen de fondo que no se repite,
+            se encuentra arriba a la derecha y permanece fija.
+        </p>
+    </div>
+
+    <div class="transparente">
+        Este fondo utiliza transparencia mediante RGBA.
+    </div>
+
+</body>
+</html>
