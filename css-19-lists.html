@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Lists</title>
+
+    <style>
+        .circulo {
+            list-style-type: circle;
+        }
+
+        .cuadrado {
+            list-style-type: square;
+        }
+
+        .romanos {
+            list-style-type: upper-roman;
+        }
+
+        .letras {
+            list-style-type: lower-alpha;
+        }
+
+        .dentro {
+            list-style-position: inside;
+        }
+
+        .sin-marcador {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .abreviado {
+            list-style: square inside;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Listas con CSS</h1>
+
+    <h2>Lista con círculos</h2>
+    <ul class="circulo">
+        <li>Café</li>
+        <li>Té</li>
+        <li>Leche</li>
+    </ul>
+
+    <h2>Lista con cuadrados</h2>
+    <ul class="cuadrado">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>Lista con números romanos</h2>
+    <ol class="romanos">
+        <li>Introducción</li>
+        <li>Desarrollo</li>
+        <li>Conclusión</li>
+    </ol>
+
+    <h2>Lista con letras</h2>
+    <ol class="letras">
+        <li>Primera opción</li>
+        <li>Segunda opción</li>
+        <li>Tercera opción</li>
+    </ol>
+
+    <h2>Marcadores dentro del elemento</h2>
+    <ul class="dentro">
+        <li>Este elemento utiliza list-style-position inside.</li>
+        <li>El marcador forma parte del contenido.</li>
+    </ul>
+
+    <h2>Lista sin marcadores</h2>
+    <ul class="sin-marcador">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+    </ul>
+
+    <h2>Propiedad abreviada</h2>
+    <ul class="abreviado">
+        <li>Elemento uno</li>
+        <li>Elemento dos</li>
+    </ul>
+
+</body>
+</html>
