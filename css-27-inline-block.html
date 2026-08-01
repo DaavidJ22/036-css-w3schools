@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Inline-block</title>
+
+    <style>
+        .inline {
+            display: inline;
+            width: 120px;
+            height: 60px;
+            padding: 10px;
+            border: 2px solid red;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            padding: 10px;
+            border: 2px solid green;
+        }
+
+        .block {
+            display: block;
+            width: 120px;
+            height: 60px;
+            padding: 10px;
+            border: 2px solid blue;
+        }
+
+        .menu {
+            background-color: lightgray;
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Display inline-block en CSS</h1>
+
+    <h2>Display inline</h2>
+
+    <span class="inline">Elemento 1</span>
+    <span class="inline">Elemento 2</span>
+
+    <h2>Display inline-block</h2>
+
+    <span class="inline-block">Elemento 1</span>
+    <span class="inline-block">Elemento 2</span>
+
+    <h2>Display block</h2>
+
+    <span class="block">Elemento 1</span>
+    <span class="block">Elemento 2</span>
+
+    <h2>Menú horizontal</h2>
+
+    <ul class="menu">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+    </ul>
+
+</body>
+</html>
