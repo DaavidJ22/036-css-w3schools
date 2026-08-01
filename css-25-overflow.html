@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Overflow</title>
+
+    <style>
+        .visible {
+            width: 250px;
+            height: 80px;
+            border: 2px solid green;
+            overflow: visible;
+            margin-bottom: 70px;
+        }
+
+        .hidden {
+            width: 250px;
+            height: 80px;
+            border: 2px solid red;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .scroll {
+            width: 250px;
+            height: 80px;
+            border: 2px solid blue;
+            overflow: scroll;
+            margin-bottom: 20px;
+        }
+
+        .auto {
+            width: 250px;
+            height: 80px;
+            border: 2px solid purple;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedad overflow en CSS</h1>
+
+    <h2>Overflow visible</h2>
+
+    <div class="visible">
+        Este contenido es demasiado largo para caber dentro del elemento.
+        Con overflow visible, el contenido continúa mostrándose fuera de
+        los límites de la caja.
+    </div>
+
+    <h2>Overflow hidden</h2>
+
+    <div class="hidden">
+        Este contenido es demasiado largo para caber dentro del elemento.
+        Con overflow hidden, la parte que sale de la caja queda oculta.
+    </div>
+
+    <h2>Overflow scroll</h2>
+
+    <div class="scroll">
+        Este contenido es demasiado largo para caber dentro del elemento.
+        Con overflow scroll, aparecen barras de desplazamiento para poder
+        observar el contenido completo.
+    </div>
+
+    <h2>Overflow auto</h2>
+
+    <div class="auto">
+        Este contenido es demasiado largo para caber dentro del elemento.
+        Con overflow auto, las barras aparecen solamente cuando son
+        necesarias.
+    </div>
+
+</body>
+</html>
