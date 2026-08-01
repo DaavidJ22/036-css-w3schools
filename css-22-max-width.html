@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Max-width</title>
+
+    <style>
+        .ancho-fijo {
+            width: 500px;
+            margin: auto;
+            border: 3px solid green;
+            padding: 10px;
+        }
+
+        .ancho-maximo {
+            max-width: 500px;
+            margin: auto;
+            border: 3px solid blue;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedad max-width en CSS</h1>
+
+    <div class="ancho-fijo">
+        Este elemento utiliza width: 500px.
+        En una ventana pequeña puede provocar desplazamiento horizontal.
+    </div>
+
+    <br>
+
+    <div class="ancho-maximo">
+        Este elemento utiliza max-width: 500px.
+        Puede reducir su tamaño cuando la ventana es más pequeña.
+    </div>
+
+</body>
+</html>
