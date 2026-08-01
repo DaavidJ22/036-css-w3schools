@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Dropdowns</title>
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .boton {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contenido-dropdown {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .contenido-dropdown a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .contenido-dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .contenido-dropdown {
+            display: block;
+        }
+
+        .dropdown:hover .boton {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Menú desplegable con CSS</h1>
+
+    <p>Coloca el cursor sobre el botón para mostrar las opciones.</p>
+
+    <div class="dropdown">
+
+        <button class="boton">
+            Menú desplegable
+        </button>
+
+        <div class="contenido-dropdown">
+            <a href="#">Enlace 1</a>
+            <a href="#">Enlace 2</a>
+            <a href="#">Enlace 3</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
