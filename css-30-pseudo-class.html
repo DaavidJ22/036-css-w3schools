@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-class</title>
+
+    <style>
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        .caja {
+            background-color: lightgray;
+            padding: 20px;
+            width: 250px;
+        }
+
+        .caja:hover {
+            background-color: lightblue;
+        }
+
+        p:first-child {
+            font-weight: bold;
+            color: darkorange;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudoclases en CSS</h1>
+
+    <p>
+        <a href="https://www.w3schools.com/css/">
+            Visitar W3Schools
+        </a>
+    </p>
+
+    <div class="caja">
+        Coloca el cursor sobre esta caja.
+    </div>
+
+    <div>
+        <p>Este es el primer párrafo dentro del div.</p>
+        <p>Este es el segundo párrafo dentro del div.</p>
+    </div>
+
+    <br>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+
+</body>
+</html>
