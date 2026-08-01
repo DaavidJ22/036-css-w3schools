@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Opacity</title>
+
+    <style>
+        img {
+            width: 250px;
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        .caja-transparente {
+            background-color: green;
+            opacity: 0.4;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .fondo-transparente {
+            background-color: rgba(0, 128, 0, 0.4);
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Opacidad en CSS</h1>
+
+    <p>
+        Coloca el cursor sobre la imagen para cambiar su opacidad.
+    </p>
+
+    <img
+        src="https://www.w3schools.com/css/img_forest.jpg"
+        alt="Bosque">
+
+    <div class="caja-transparente">
+        Esta caja utiliza opacity. El texto también se vuelve transparente.
+    </div>
+
+    <div class="fondo-transparente">
+        Esta caja utiliza RGBA. Solo el fondo es transparente.
+    </div>
+
+</body>
+</html>
