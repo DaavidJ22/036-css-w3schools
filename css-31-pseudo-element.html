@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Pseudo-element</title>
+
+    <style>
+        .texto::first-letter {
+            color: red;
+            font-size: 40px;
+        }
+
+        .texto::first-line {
+            color: blue;
+            font-variant: small-caps;
+        }
+
+        h2::before {
+            content: "★ ";
+            color: orange;
+        }
+
+        h2::after {
+            content: " ★";
+            color: orange;
+        }
+
+        li::marker {
+            color: green;
+            font-size: 20px;
+        }
+
+        ::selection {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudoelementos en CSS</h1>
+
+    <p class="texto">
+        Este párrafo permite observar cómo la primera letra y la primera
+        línea reciben estilos diferentes mediante pseudoelementos.
+    </p>
+
+    <h2>Contenido agregado con CSS</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <p>
+        Selecciona este texto con el cursor para observar el efecto
+        del pseudoelemento selection.
+    </p>
+
+</body>
+</html>
