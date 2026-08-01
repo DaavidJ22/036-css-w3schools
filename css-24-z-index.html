@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Z-index</title>
+
+    <style>
+        .contenedor {
+            position: relative;
+            height: 250px;
+        }
+
+        .caja-negra {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .caja-gris {
+            position: absolute;
+            z-index: 3;
+            background-color: lightgray;
+            width: 70%;
+            height: 60px;
+            left: 50px;
+            top: 50px;
+            padding: 10px;
+        }
+
+        .caja-verde {
+            position: absolute;
+            z-index: 2;
+            background-color: lightgreen;
+            width: 35%;
+            height: 100px;
+            left: 270px;
+            top: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedad z-index en CSS</h1>
+
+    <div class="contenedor">
+
+        <div class="caja-negra">
+            Caja negra con z-index: 1
+        </div>
+
+        <div class="caja-gris">
+            Caja gris con z-index: 3
+        </div>
+
+        <div class="caja-verde">
+            Caja verde con z-index: 2
+        </div>
+
+    </div>
+
+</body>
+</html>
