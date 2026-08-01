@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Display</title>
+
+    <style>
+        .menu li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        .bloque {
+            display: block;
+            background-color: lightblue;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .en-linea {
+            display: inline;
+            background-color: lightgreen;
+        }
+
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedad display en CSS</h1>
+
+    <h2>Lista mostrada en línea</h2>
+
+    <ul class="menu">
+        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Contacto</li>
+    </ul>
+
+    <h2>Elementos mostrados como bloque</h2>
+
+    <span class="bloque">Primer elemento span</span>
+    <span class="bloque">Segundo elemento span</span>
+
+    <h2>Elemento de bloque mostrado en línea</h2>
+
+    <p class="en-linea">Primer párrafo.</p>
+    <p class="en-linea">Segundo párrafo.</p>
+
+    <p class="oculto">
+        Este texto está oculto con display none.
+    </p>
+
+</body>
+</html>
