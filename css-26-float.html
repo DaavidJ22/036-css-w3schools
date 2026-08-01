@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Float</title>
+
+    <style>
+        .izquierda {
+            float: left;
+            width: 120px;
+            margin-right: 15px;
+        }
+
+        .derecha {
+            float: right;
+            width: 120px;
+            margin-left: 15px;
+        }
+
+        .sin-flotar {
+            float: none;
+            width: 120px;
+        }
+
+        .cajas div {
+            float: left;
+            padding: 20px;
+        }
+
+        .caja1 {
+            background-color: lightcoral;
+        }
+
+        .caja2 {
+            background-color: lightyellow;
+        }
+
+        .caja3 {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Propiedad float en CSS</h1>
+
+    <h2>Float a la izquierda</h2>
+
+    <img
+        class="izquierda"
+        src="https://www.w3schools.com/css/pineapple.jpg"
+        alt="Piña">
+
+    <p>
+        Esta imagen utiliza float: left. El texto se coloca alrededor
+        de la imagen y continúa ocupando el espacio disponible a su
+        lado derecho.
+    </p>
+
+    <div style="clear: both;"></div>
+
+    <h2>Float a la derecha</h2>
+
+    <img
+        class="derecha"
+        src="https://www.w3schools.com/css/pineapple.jpg"
+        alt="Piña">
+
+    <p>
+        Esta imagen utiliza float: right. El texto se coloca alrededor
+        de la imagen y aparece en el espacio disponible a su izquierda.
+    </p>
+
+    <div style="clear: both;"></div>
+
+    <h2>Sin float</h2>
+
+    <img
+        class="sin-flotar"
+        src="https://www.w3schools.com/css/pineapple.jpg"
+        alt="Piña">
+
+    <h2>Elementos flotando uno junto a otro</h2>
+
+    <div class="cajas">
+        <div class="caja1">Caja 1</div>
+        <div class="caja2">Caja 2</div>
+        <div class="caja3">Caja 3</div>
+    </div>
+
+</body>
+</html>
